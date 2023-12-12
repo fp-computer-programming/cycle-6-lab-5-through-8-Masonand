@@ -1,0 +1,43 @@
+# lab_6-6.py
+#Author Mason Andrews 
+
+word1 = input("Enter the first word: ")
+word2 = input("Enter the second word: ")
+word3 = input("Enter the third word: ")
+word4 = input("Enter the fourth word: ")
+word5 = input("Enter the fifth word: ")
+
+words_list = [word1, word2, word3, word4, word5]
+
+lengths_list = [len(word) for word in words_list]
+
+print("List of word lengths:", lengths_list)
+
+# lab_6-7.py
+
+num1 = float(input("Enter the first numeric value: "))
+num2 = float(input("Enter the second numeric value: "))
+num3 = float(input("Enter the third numeric value: "))
+
+numbers = [num1, num2, num3]
+
+doubled_values = [int(2 * num) for num in numbers]
+
+print("List with doubled values as integers:", doubled_values)
+
+# lab_6-8.py
+
+num1 = float(input("Enter the first numeric value: "))
+num2 = float(input("Enter the second numeric value: "))
+num3 = float(input("Enter the third numeric value: "))
+
+numbers = [num1, num2, num3]
+
+if all(num % 2 == 0 for num in numbers):
+    print("even")
+
+elif all(num % 2 != 0 for num in numbers):
+    print("odd")
+
+else:
+    print("mixed")
